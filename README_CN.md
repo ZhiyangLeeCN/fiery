@@ -73,7 +73,7 @@ LogPusher部署在每一台运行集成FierySDK项目的服务器内，主要职
 ### LogPusher 日志收集及推送服务
  日志推送服务，可以监控一个目录下所有日志是否有更新，并将内容推送到主服务
  ```
- nohup java -XX:-MaxFDLimit -Xms128m -Xmx450m -XX:ReservedCodeCacheSize=240m -XX:+UseCompressedOops -jar logpusher-版本号-SNAPSHOT.jar  -path [要监控的日志目录] -host 服务器ip及端口[ip:port] -outtime 7 -threadcount 10 &
+nohup java -XX:-MaxFDLimit -Xms128m -Xmx450m -XX:ReservedCodeCacheSize=240m -XX:+UseCompressedOops -jar logpusher-0.5.3-SNAPSHOT.jar -c ./conf/logpusher.properties &
  ```
 
 
